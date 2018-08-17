@@ -6,7 +6,6 @@
 // console.log(number[1]);
 let display = document.querySelector('.displayAlert');
 let reloadBtn = document.querySelector('button[name="reload"]');
-console.log(reloadBtn);
 
   function randomNumber(max) {
     return Math.ceil(Math.random() * Math.floor(9));
@@ -19,7 +18,6 @@ console.log(reloadBtn);
     // Alternative: create new variables/instances.
     // let indexList = number[i];
     // let random = randomNumber();
-    matchNumbers();
 }
     function matchNumbers() {
       let sameNumber1 = number[0];
@@ -36,16 +34,17 @@ console.log(reloadBtn);
       sameNumber3.classList.add("highlight");
       display.innerHTML = "You have a match!";
       }
-      else if(sameNumber2.innerHTML === sameNumber1.innerHTML && sameNumber2.innerHTML === sameNumber3.innerHTML ){
+      if(sameNumber2.innerHTML === sameNumber1.innerHTML && sameNumber2.innerHTML === sameNumber3.innerHTML ){
         sameNumber1.classList.add("highlight");
         sameNumber2.classList.add("highlight");
         sameNumber3.classList.add("highlight");
-        display.innerHTML = "You have a triple match!";
+        display.innerHTML = "A triple match!";
       }
     }
 
    loopNumbers(randomNumber());
+   matchNumbers();
 
   reloadBtn.addEventListener('click', function() {
-      loopNumbers(randomNumber());
+      location.reload();
   });

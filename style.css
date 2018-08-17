@@ -1,33 +1,37 @@
-body {
-  background-color: #00A8B8;
+button {
+  font-size: 40px;
+  border-radius: 6px;
+  color: black;
+  padding: 2rem;
+  text-shadow: 1px 1px 2px black;
 }
 div {
-  background-color: lightblue;
+  background-color: #b5bbbc;
   color: white;
   font-size: 18rem;
-  font-family: lato;
-  text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
-  box-shadow: 4px 4px 5px navy;
+  font-family: Helvetica;
+  text-shadow: 1px 1px 2px black, 0 0 5px grey;
+  box-shadow: 4px 4px 5px #0e4d5b;
   padding: 1rem;
   text-align: center;
-  margin: none;
   display: inline-block;
+  border-radius: 6px;
 }
 
 .position {
-
-  margin: 20%;
-  background-color: #00A8B8;
+  margin: 10%;
 }
 
 .highlight {
-  background-color: black;
+  background-color: #22727f;
 
 }
 .displayAlert {
   font-size: 5rem;
   text-align: center;
-  color: white;
-  text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
-
+  color: #303338;
+  text-shadow: 1px 1px 2px black;
+}
+.numbers {
+  width: 20%;
 }
