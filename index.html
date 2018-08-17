@@ -3,30 +3,27 @@
   <head>
     <meta charset="utf-8">
     <title>Playing With Matches</title>
-    <style media="screen" type="text/css">
-    body {
-      background-color: #00A8B8;
-    }
-    div {
-      background-color: lightblue;
-      color: white;
-      font-size: 20rem;
-      font-family: lato;
-      text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
-      box-shadow: 4px 4px 5px navy;
-      /* width: 20%;
-      height: 50%; */
-      padding: 2rem;
-      text-align: center;
-      margin: 20%;
-    }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div class="">
-      8
+    <div class="numbers">
+
+
     </div>
+    <script type="text/javascript">
+
+    function randomNumber(max) {
+      return Math.ceil(Math.random() * Math.floor(9));
+    }
+
+    function displayNumbers(num) {
+       let number = document.querySelector('.numbers');
+        number.innerHTML = num;
+    }
+    
+    displayNumbers(randomNumber());
+
+    </script>
 
   </body>
 </html>

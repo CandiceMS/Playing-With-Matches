@@ -1,0 +1,14 @@
+body {
+  background-color: #00A8B8;
+}
+div {
+  background-color: lightblue;
+  color: white;
+  font-size: 20rem;
+  font-family: lato;
+  text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
+  box-shadow: 4px 4px 5px navy;
+  padding: 2rem;
+  text-align: center;
+  margin: 20%;
+}
