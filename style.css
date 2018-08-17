@@ -4,11 +4,18 @@ body {
 div {
   background-color: lightblue;
   color: white;
-  font-size: 20rem;
+  font-size: 18rem;
   font-family: lato;
   text-shadow: 1px 1px 2px black, 0 0 5px darkblue;
   box-shadow: 4px 4px 5px navy;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
+  margin: none;
+  display: inline-block;
+}
+
+.position {
+
   margin: 20%;
+  background-color: #00A8B8;
 }
